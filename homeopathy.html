@@ -1,70 +1,118 @@
 <!DOCTYPE html>
-<html lang="en"
-  <head>
-    <title>Aarogayas</title>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <title>Aarogayas</title>
+    <style>
+        /* CSS for styling the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
 
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
-   
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html"><span class="flaticon-lotus"></span>Aarogya's</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="classes.html" class="nav-link">Classes</a></li>
-					<li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
-					<!-- <li class="nav-item"><a href="about.html" class="nav-link">About</a></li> -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							About
-						</a>
-						<div class="dropdown-menu" aria-labelledby="aboutDropdown">
-							<a class="dropdown-item" href="#">About Us</a>
-							<a class="dropdown-item" href="#">Our Team</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="award.html">Awards</a> <!-- Added dropdown item for Awards -->
-						</div>
-					</li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Services
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="naturopathy.html">NATUROPATHY</a>
-							<a class="dropdown-item" href="homeopathy.html">HOMEOPATHY</a>
-							<a class="dropdown-item" href="aarogyasnaam.html">AAROGYA SNAAN</a>
-							<a class="dropdown-item" href="e-learning.html">E-LEARNING</a>							
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">More Services</a>
-						</div>								
-					<li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
-					<li class="nav-item"><a href="sinup.html" class="nav-link">Sinup</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="flaticon-lotus"></span>Aarogya's</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="classes.html" class="nav-link">Classes</a></li>
+                    <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <a class="dropdown-item" href="#">About Us</a>
+                            <a class="dropdown-item" href="#">Our Team</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="award.html">Awards</a> <!-- Added dropdown item for Awards -->
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="naturopathy.html">NATUROPATHY</a>
+                            <a class="dropdown-item" href="homeopathy.html">HOMEOPATHY</a>
+                            <a class="dropdown-item" href="aarogyasnaam.html">AAROGYA SNAAN</a>
+                            <a class="dropdown-item" href="e-learning.html">E-LEARNING</a>                            
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">More Services</a>
+                        </div>                                
+                    </li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="signup.html" class="nav-link">Signup</a></li> <!-- Corrected Sinup to Signup -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="ftco-section ftco-intro">
+        <div>
+            <section>
+                <h2>Introduction</h2>
+                <p>Homeopathy is a medical system based on the belief that the body can cure itself. Those who practice it use tiny amounts of natural substances, like plants and minerals. They believe these stimulate the healing process.</p>
+            </section>
+          
+            <section>
+                <h2>Key Principles</h2>
+                <p>A basic belief behind homeopathy is “like cures like.” In other words, something that brings on symptoms in a healthy person can — in a very small dose — treat an illness with similar symptoms. This is meant to trigger the body’s natural defenses.</p>
+                <p>For example, red onion makes your eyes water. That’s why it’s used in homeopathic remedies for allergies. Treatments for other ailments are made from poison ivy, white arsenic, crushed whole bees, and an herb called arnica.</p>
+                <p>Homeopathic doctors (who also are called “homeopaths”) weaken these ingredients by adding water or alcohol. Then they shake the mixture as part of a process called “potentization.” They believe this step transfers the healing essence. Homeopaths also believe that the lower the dose, the more powerful the medicine. In fact, many of these remedies no longer contain any molecules of the original substance. They come in a variety of forms, like sugar pellets, liquid drops, creams, gels, and tablets.</p>
+            </section>          
+            <section>
+                <h2>Common Ailments Treated</h2>
+                <ul>
+                    <li>Allergies</li>
+                    <li>Migraines</li>
+                    <li>Depression</li>
+                    <li>Chronic fatigue syndrome</li>
+                    <li>Rheumatoid arthritis</li>
+                    <li>Irritable bowel syndrome</li>
+                    <li>Premenstrual syndrome</li>
+                </ul>
+                <p>It can also be used for minor issues like bruises, scrapes, toothaches, headaches, nausea, coughs, and colds.</p>
+            </section>
+        </div>
+    </
