@@ -3323,6 +3323,8 @@ input[type="button"].btn-block {
   .navbar-toggler:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
+
+
 .navbar-toggler-icon {
   display: inline-block;
   width: 1.5em;

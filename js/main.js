@@ -325,3 +325,12 @@
 
 })(jQuery);
 
+// document.getElementById('yearCardButton').addEventListener('click', async () => {
+// 	const response = await fetch('/create-checkout-session', {
+// 	  method: 'POST',
+// 	});
+// 	const session = await response.json();
+// 	// Redirect to Stripe checkout page
+// 	window.location = `https://checkout.stripe.com/pay/${session.id}`;
+//   });
+  
