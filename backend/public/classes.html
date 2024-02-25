@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -26,26 +28,26 @@
     <link rel="stylesheet" href="css/style.css">
   <body>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-		<div class="container">
+		<div class="container">    
 			<a class="navbar-brand" href="index.html"><span class="flaticon-lotus"></span>Aarogya's</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
 			</button>
+	
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 					<li class="nav-item"><a href="classes.html" class="nav-link">Classes</a></li>
 					<li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
-					<!-- <li class="nav-item"><a href="about.html" class="nav-link">About</a></li> -->
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							About
 						</a>
 						<div class="dropdown-menu" aria-labelledby="aboutDropdown">
-							<a class="dropdown-item" href="#">About Us</a>
-							<a class="dropdown-item" href="#">Our Team</a>
+							<a class="dropdown-item" href="about.html">About Us</a>
+							<a class="dropdown-item" href="contact.html">Contact Our Team</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="award.html">Awards</a> <!-- Added dropdown item for Awards -->
+							<a class="dropdown-item" href="award.html">Awards</a>
 						</div>
 					</li>
 					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
@@ -57,16 +59,18 @@
 							<a class="dropdown-item" href="naturopathy.html">NATUROPATHY</a>
 							<a class="dropdown-item" href="homeopathy.html">HOMEOPATHY</a>
 							<a class="dropdown-item" href="aarogyasnaam.html">AAROGYA SNAAN</a>
-							<a class="dropdown-item" href="e-learning.html">E-LEARNING</a>							
+							<a class="dropdown-item" href="e-learning.html">E-LEARNING</a>                            
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">More Services</a>							
-						</div>								
-					<li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
-					<li class="nav-item"><a href="sinup.html" class="nav-link">Sinup</a></li>
+							<a class="dropdown-item" href="services.html">More Services</a> <!-- Change the link to the common services page -->
+						</div>                              
+					<!-- <li id="login-link" class="nav-item"><a href="login.html" class="nav-link">Login</a></li> -->
+					<!-- <li id="signup-link" class="nav-item"><a href="sinup.html" class="nav-link">Signup</a></li> -->
+					<!-- <li id="logout-link" class="nav-item" style="display: none;"><a href="#" class="nav-link" onclick="logout()">Logout</a></li> -->
 				</ul>
 			</div>
 		</div>
 	</nav>
+	
     <!-- END nav -->
 
     <section class="hero-wrap js-fullheight" style="background-image: url('images/bg_3.jpg');">
