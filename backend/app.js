@@ -67,10 +67,10 @@ app.post('/send-email', (req, res) => {
       console.log('Email sent: ' + info.response);
       // Render the same form page with a success message
       res.send(`
-        // <script>
-        //   alert('Email sent successfully');
-        //   window.location.href = '/';
-        // </script>
+        <script>
+          alert('Email sent successfully');
+          window.location.href = '/';
+        </script>
       `);
     }
   });

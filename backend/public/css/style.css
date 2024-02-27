@@ -8939,3 +8939,328 @@ footer {
   cursor: pointer;
   outline: none;
 }
+/* Base styles */
+/* Example: Set width of a container to 100% */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Optional: Set maximum width for large screens */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Media queries for responsiveness */
+/* Example: Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 0 20px; /* Example: Add padding to the container */
+  }
+  /* Additional responsive styles for other elements */
+}
+
+/* Example: Adjust layout for even smaller screens */
+@media screen and (max-width: 576px) {
+  .container {
+      padding: 0 10px; /* Example: Further reduce padding */
+  }
+  /* Additional responsive styles for other elements */
+}
+.arogyas {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 3em;
+
+}
+.containerr{
+  margin: 50px;
+}
+.success {
+  display: flex;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* Styling for the sections below the navbar */
+
+/* Container for the sections */
+.container {
+  margin: 20px auto;
+  padding: 0 20px;
+  max-width: 800px;
+  /* Adjust as needed */
+  text-align: center;
+  /* Center align the text within the container */
+}
+
+/* Styling for each individual section */
+section {
+  margin-bottom: 40px;
+  text-align: left;
+  /* Left align the text within each section */
+}
+
+/* Title for each section */
+section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs inside sections */
+section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Unordered list inside sections */
+section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  text-align: left;
+  /* Left align the text within lists */
+}
+
+/* List items inside sections */
+section ul li {
+  font-size: 16px;
+  color: #666;
+}
+/* more services */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* Center align all content */
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  /* Add space between headings and other content */
+}
+
+table {
+  margin: 0 auto;
+  /* Center the table */
+  border-collapse: collapse;
+  width: 90%;
+  /* Adjust table width */
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+ul {
+  text-align: left;
+  /* Left align lists */
+  padding-left: 0;
+  /* Remove default padding */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  ul,
+  li,
+  p {
+      font-size: 14px;
+      /* Adjust font size for smaller screens */
+  }
+}
+
+.reki {
+  margin: 75px;
+}
+/* nero paty */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* Styling for the sections below the navbar */
+
+/* Container for the sections */
+.container {
+  margin: 20px auto;
+  padding: 0 20px;
+  max-width: 800px;
+  /* Adjust as needed */
+  text-align: center;
+  /* Center align the text within the container */
+}
+
+/* Styling for each individual section */
+section {
+  margin-bottom: 40px;
+  text-align: left;
+  /* Left align the text within each section */
+}
+
+/* Title for each section */
+section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs inside sections */
+section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Unordered list inside sections */
+section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  text-align: left;
+  /* Left align the text within lists */
+}
+
+/* List items inside sections */
+section ul li {
+  font-size: 16px;
+  color: #666;
+}
+
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+@media (max-width: 576px) {
+  .table thead {
+      display: none;
+  }
+
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+      display: block;
+      width: 100%;
+  }
+
+  .table tr {
+      margin-bottom: 1rem;
+  }
+
+  .table td {
+      text-align: left;
+      padding-left: 0.5rem;
+      position: relative;
+  }
+
+  .table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 0.75rem;
+      font-weight: bold;
+  }
+}
+/* award */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Grid Layout */
+@media screen and (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
