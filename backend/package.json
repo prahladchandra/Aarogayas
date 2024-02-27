@@ -4,7 +4,8 @@
   "description": "yoga",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build"
+    "build": "npm run build",
+    "start":"node app.js"
   },
   "author": "Prahlad",
   "license": "ISC",
