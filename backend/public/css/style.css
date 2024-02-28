@@ -8469,6 +8469,8 @@ textarea.form-control {
 .contact-form textarea.form-control {
   height: inherit !important; }
 
+  
+
 .block-9 .form-control {
   outline: none !important;
   -webkit-box-shadow: none !important;
@@ -8718,148 +8720,100 @@ textarea.form-control {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
 
+    /* prahlad */
+/* Loader Styling */
 #ftco-loader {
   position: fixed;
-  width: 96px;
-  height: 96px;
+  width: 10vw; /* Use viewport width for responsiveness */
+  height: 10vw; /* Use viewport width for responsiveness */
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.9);
-  -webkit-box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
-  box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
-  border-radius: 16px;
+  box-shadow: 0px 2vw 5vw rgba(0, 0, 0, 0.24); /* Use viewport units for box-shadow */
+  border-radius: 5vw; /* Use viewport width for border-radius */
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
-  -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
   transition: opacity .2s ease-out, visibility 0s linear .2s;
-  z-index: 1000; }
+  z-index: 1000;
+}
 
+/* Fullscreen Loader */
 #ftco-loader.fullscreen {
   padding: 0;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: none;
-  -ms-transform: none;
+  width: 100vw; /* Use viewport width for responsiveness */
+  height: 100vh; /* Use viewport height for responsiveness */
   transform: none;
   background-color: #fff;
   border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
+  box-shadow: none;
+}
 
+/* Show Loader */
 #ftco-loader.show {
-  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
   transition: opacity .4s ease-out, visibility 0s linear 0s;
   visibility: visible;
-  opacity: 1; }
+  opacity: 1;
+}
 
+/* Loader Animation */
 #ftco-loader .circular {
-  -webkit-animation: loader-rotate 2s linear infinite;
   animation: loader-rotate 2s linear infinite;
   position: absolute;
-  left: calc(50% - 24px);
-  top: calc(50% - 24px);
+  left: 50%;
+  top: 50%;
   display: block;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg); }
+  transform: translate(-50%, -50%) rotate(0deg);
+}
 
 #ftco-loader .path {
   stroke-dasharray: 1, 200;
   stroke-dashoffset: 0;
-  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
   animation: loader-dash 1.5s ease-in-out infinite;
-  stroke-linecap: round; }
+  stroke-linecap: round;
+}
 
-@-webkit-keyframes loader-rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
+/* Keyframe Animations */
 @keyframes loader-rotate {
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@-webkit-keyframes loader-dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0; }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px; }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px; } }
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 
 @keyframes loader-dash {
   0% {
     stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0; }
+    stroke-dashoffset: 0;
+  }
   50% {
     stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px; }
+    stroke-dashoffset: -35px;
+  }
   100% {
     stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px; } }
-/* CSS for styling the table */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
+    stroke-dashoffset: -136px;
+  }
 }
 
-th, td {
-  border: 1px solid #dddddd;
-  padding: 12px; /* Increased padding for better spacing */
-  text-align: left;
-  margin: 0; /* Added to reset margin */
-}
-
-th {
-  background-color: #f2f2f2;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-ul {
-  margin: 0;
-  padding-left: 20px;
-}
-
-/* Style for course details list */
-td ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-/* Remove bullet points from list items within table cell */
-td ul li {
-  list-style-type: none;
-}
-/* CSS for fixing footer to the bottom */
+/* Footer Styling */
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #333; /* Change the background color as needed */
-  color: #fff; /* Change the text color as needed */
-  padding: 20px 0; /* Add padding for better spacing */
-  text-align: center; /* Center align the text */
+  background-color: #333;
+  color: #fff;
+  padding: 2vh 0; /* Use viewport height for padding */
+  text-align: center;
 }
+
+/* Chatbot Widget Styling */
 #chatbot-widget {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 4vh; /* Use viewport height for positioning */
+  right: 4vh; /* Use viewport height for positioning */
 }
 
 #chatbot-toggle {
@@ -8871,8 +8825,8 @@ footer {
   color: #fff;
   border: none;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 10vw; /* Use viewport width for sizing */
+  height: 10vw; /* Use viewport width for sizing */
   cursor: pointer;
   outline: none;
 }
@@ -8880,387 +8834,25 @@ footer {
 #chatbot {
   display: none;
   position: fixed;
-  bottom: 80px;
-  right: 20px;
-  width: 300px;
+  bottom: 12vh; /* Use viewport height for positioning */
+  right: 4vh; /* Use viewport height for positioning */
+  width: 80vw; /* Use viewport width for sizing */
+  max-width: 400px; /* Set maximum width */
   background-color: #f8f9fa;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 2vh; /* Use viewport height for border-radius */
   overflow: hidden;
 }
 
-#chatbot-header {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#chatbot-title {
-  font-weight: bold;
-}
-
-#chatbot-close {
-  border: none;
-  background: transparent;
-  color: #fff;
-  cursor: pointer;
-  outline: none;
-}
-
-#chatbot-body {
-  max-height: 200px;
-  overflow-y: auto;
-  padding: 10px;
-}
-
-#chatbot-footer {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#chatbot-input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-#chatbot-send {
-  border: none;
-  background-color: #007bff;
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-}
-/* Base styles */
-/* Example: Set width of a container to 100% */
-.container {
-  width: 100%;
-  max-width: 1200px; /* Optional: Set maximum width for large screens */
-  margin: 0 auto; /* Center the container */
-}
-
-/* Media queries for responsiveness */
-/* Example: Adjust layout for smaller screens */
-@media screen and (max-width: 768px) {
-  .container {
-      padding: 0 20px; /* Example: Add padding to the container */
-  }
-  /* Additional responsive styles for other elements */
-}
-
-/* Example: Adjust layout for even smaller screens */
-@media screen and (max-width: 576px) {
-  .container {
-      padding: 0 10px; /* Example: Further reduce padding */
-  }
-  /* Additional responsive styles for other elements */
-}
-.arogyas {
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  margin-top: 3em;
-
-}
-.containerr{
-  margin: 50px;
-}
-.success {
-  display: flex;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-th,
-td {
-  border: 1px solid #dddddd;
-  padding: 8px;
-  text-align: left;
-}
-
-th {
-  background-color: #f2f2f2;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-ul {
-  margin: 0;
-  padding-left: 20px;
-}
-
-/* Styling for the sections below the navbar */
-
-/* Container for the sections */
-.container {
-  margin: 20px auto;
-  padding: 0 20px;
-  max-width: 800px;
-  /* Adjust as needed */
-  text-align: center;
-  /* Center align the text within the container */
-}
-
-/* Styling for each individual section */
-section {
-  margin-bottom: 40px;
-  text-align: left;
-  /* Left align the text within each section */
-}
-
-/* Title for each section */
-section h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-/* Paragraphs inside sections */
-section p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-/* Unordered list inside sections */
-section ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  text-align: left;
-  /* Left align the text within lists */
-}
-
-/* List items inside sections */
-section ul li {
-  font-size: 16px;
-  color: #666;
-}
-/* more services */
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  /* Center align all content */
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3 {
-  margin-top: 20px;
-  /* Add space between headings and other content */
-}
-
-table {
-  margin: 0 auto;
-  /* Center the table */
-  border-collapse: collapse;
-  width: 90%;
-  /* Adjust table width */
-}
-
-table,
-th,
-td {
-  border: 1px solid black;
-  padding: 10px;
-  text-align: left;
-}
-
-ul {
-  text-align: left;
-  /* Left align lists */
-  padding-left: 0;
-  /* Remove default padding */
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-@media only screen and (max-width: 600px) {
-
-  ul,
-  li,
-  p {
-      font-size: 14px;
-      /* Adjust font size for smaller screens */
-  }
-}
-
-.reki {
-  margin: 75px;
-}
-/* nero paty */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-th,
-td {
-  border: 1px solid #dddddd;
-  padding: 10px;
-  text-align: left;
-}
-
-th {
-  background-color: #f2f2f2;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-ul {
-  margin: 0;
-  padding-left: 20px;
-}
-
-/* Styling for the sections below the navbar */
-
-/* Container for the sections */
-.container {
-  margin: 20px auto;
-  padding: 0 20px;
-  max-width: 800px;
-  /* Adjust as needed */
-  text-align: center;
-  /* Center align the text within the container */
-}
-
-/* Styling for each individual section */
-section {
-  margin-bottom: 40px;
-  text-align: left;
-  /* Left align the text within each section */
-}
-
-/* Title for each section */
-section h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-/* Paragraphs inside sections */
-section p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-/* Unordered list inside sections */
-section ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  text-align: left;
-  /* Left align the text within lists */
-}
-
-/* List items inside sections */
-section ul li {
-  font-size: 16px;
-  color: #666;
-}
-
-
-.table {
-  width: 100%;
-  margin-bottom: 1rem;
-  background-color: transparent;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.table th,
-.table td {
-  padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
-}
-
-.table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-}
-
-@media (max-width: 576px) {
-  .table thead {
-      display: none;
-  }
-
-  .table,
-  .table tbody,
-  .table tr,
-  .table td {
-      display: block;
-      width: 100%;
-  }
-
-  .table tr {
-      margin-bottom: 1rem;
-  }
-
-  .table td {
-      text-align: left;
-      padding-left: 0.5rem;
-      position: relative;
-  }
-
-  .table td::before {
-      content: attr(data-label);
-      position: absolute;
-      left: 0;
-      width: 50%;
-      padding-left: 0.75rem;
-      font-weight: bold;
-  }
-}
-/* award */
+/* Responsive Grid Layout */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr)); /* Use viewport width for column sizing */
+  grid-gap: 4vw; /* Use viewport width for gap sizing */
   justify-items: center;
 }
 
 .grid-item img {
-  width: 100%;
+  width: 100%; /* Ensure images fill their containers */
   height: auto;
-}
-
-/* Responsive Grid Layout */
-@media screen and (max-width: 768px) {
-  .grid-container {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
 }
