@@ -8041,11 +8041,11 @@ textarea.form-control {
   background: #d291bc !important; }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 5em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 4em 0; } }
 
 .ftco-bg-dark {
   background: #090808; }
@@ -8809,50 +8809,84 @@ footer {
   text-align: center;
 }
 
-/* Chatbot Widget Styling */
-#chatbot-widget {
-  position: fixed;
-  bottom: 4vh; /* Use viewport height for positioning */
-  right: 4vh; /* Use viewport height for positioning */
+
+/* arogya page */
+.arogyas {
+  padding: 20px;
 }
 
-#chatbot-toggle {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 9999;
-  background-color: #d291bc;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 10vw; /* Use viewport width for sizing */
-  height: 10vw; /* Use viewport width for sizing */
-  cursor: pointer;
-  outline: none;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-#chatbot {
-  display: none;
-  position: fixed;
-  bottom: 12vh; /* Use viewport height for positioning */
-  right: 4vh; /* Use viewport height for positioning */
-  width: 80vw; /* Use viewport width for sizing */
-  max-width: 400px; /* Set maximum width */
-  background-color: #f8f9fa;
-  border: 1px solid #ccc;
-  border-radius: 2vh; /* Use viewport height for border-radius */
-  overflow: hidden;
+h2 {
+  text-align: center;
 }
 
-/* Responsive Grid Layout */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr)); /* Use viewport width for column sizing */
-  grid-gap: 4vw; /* Use viewport width for gap sizing */
-  justify-items: center;
+.meditation-list {
+  list-style-type: none;
+  padding: 0;
 }
 
-.grid-item img {
-  width: 100%; /* Ensure images fill their containers */
-  height: auto;
+.meditation-list li {
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+      max-width: 100%;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.reiki {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 7em;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+      display: block;
+      overflow-x: auto;
+  }
 }
